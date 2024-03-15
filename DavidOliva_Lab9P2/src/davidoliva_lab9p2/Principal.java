@@ -220,6 +220,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButtonGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonGuardarMouseClicked
         CrearArchivo();
+        jProgressBarSubiendoArchivo.setValue(0);
     }//GEN-LAST:event_jButtonGuardarMouseClicked
 
     private void jTextAreaArchivoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextAreaArchivoMouseClicked

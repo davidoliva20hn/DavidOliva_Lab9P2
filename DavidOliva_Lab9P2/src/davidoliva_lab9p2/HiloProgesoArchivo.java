@@ -14,6 +14,7 @@ public class HiloProgesoArchivo extends Thread {
     private JProgressBar progBar;
     private JTextArea textArea;
     private String Valor;
+    private boolean run;
 
     public HiloProgesoArchivo(JProgressBar progBar, JTextArea textArea) {
         this.progBar = progBar;
@@ -38,14 +39,15 @@ public class HiloProgesoArchivo extends Thread {
      @Override
     public void run() {
         int i=0;
-        while (progBar.getValue() <= 100) {
+        run=true;
+        while (run==true) {
             if (progBar.getValue() <= 100) {
                 progBar.setValue(progBar.getValue() + 1);
                 progBar.setString(Integer.toString(progBar.getValue()));
             }
             if (i==100) {
                 textArea.setText(Valor);
-                System.out.println("hola");
+                run=false;
             }
             try {
                 Thread.sleep(50);
