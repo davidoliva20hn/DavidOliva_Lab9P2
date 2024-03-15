@@ -12,6 +12,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
@@ -221,6 +222,7 @@ public class Principal extends javax.swing.JFrame {
     private void jButtonGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonGuardarMouseClicked
         CrearArchivo();
         jProgressBarSubiendoArchivo.setValue(0);
+        JOptionPane.showMessageDialog(this, "Se modifico Correctamente");
     }//GEN-LAST:event_jButtonGuardarMouseClicked
 
     private void jTextAreaArchivoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextAreaArchivoMouseClicked

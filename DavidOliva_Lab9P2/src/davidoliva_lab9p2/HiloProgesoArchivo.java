@@ -2,6 +2,7 @@
  */
 package davidoliva_lab9p2;
 
+import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
 
@@ -47,6 +48,7 @@ public class HiloProgesoArchivo extends Thread {
             }
             if (i==100) {
                 textArea.setText(Valor);
+                JOptionPane.showMessageDialog(null, "Se Cargo Correctamente");
                 run=false;
             }
             try {
